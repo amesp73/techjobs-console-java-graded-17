@@ -27,7 +27,7 @@ public class TechJobs {
         // Allow the user to search until they manually quit
         while (true) {
 
-            String actionChoice = getUserSelection("\nView jobs by (type 'x' to quit):", actionChoices);
+            String actionChoice = getUserSelection("View jobs by (type 'x' to quit):", actionChoices);
 
             if (actionChoice == null) {
                 break;
@@ -121,14 +121,14 @@ public class TechJobs {
             System.out.println("No Results");
         } else {
             for(HashMap<String, String> jobHashMap : someJobs) {
-                System.out.println("\n*****");
+                System.out.println("*****");
 //            for(Map.Entry<String, String> keyValuePair: jobHashMap.entrySet()) {
 //                System.out.println(keyValuePair.getKey() + ": " + keyValuePair.getValue());
 //            }
                 for (String key : jobHashMap.keySet()) {
                     System.out.println(key + ": " + jobHashMap.get(key));
                 }
-                System.out.println("*****");
+                System.out.println("*****\n");
 
             }
         }
