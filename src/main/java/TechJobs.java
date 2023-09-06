@@ -119,18 +119,18 @@ public class TechJobs {
 
         if(someJobs.isEmpty()) {
             System.out.println("No Results");
-        }
-        for(HashMap<String, String> jobHashMap : someJobs) {
-            System.out.println("*****");
+        } else {
+            for(HashMap<String, String> jobHashMap : someJobs) {
+                System.out.println("\n*****");
 //            for(Map.Entry<String, String> keyValuePair: jobHashMap.entrySet()) {
 //                System.out.println(keyValuePair.getKey() + ": " + keyValuePair.getValue());
 //            }
-            for (String key : jobHashMap.keySet()) {
-                System.out.println(key + ": " + jobHashMap.get(key));
-            }
-            System.out.println("*****");
+                for (String key : jobHashMap.keySet()) {
+                    System.out.println(key + ": " + jobHashMap.get(key));
+                }
+                System.out.println("*****");
 
+            }
         }
-//        System.out.println("printJobs is not implemented yet");
     }
 }
